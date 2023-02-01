@@ -1,5 +1,5 @@
 <?php 
-    require_once "Medicine.php";
+    require_once "medecine.php";
     require_once "products.php";
 
     class Cart extends Medicine{
@@ -17,7 +17,7 @@
                 <ul>
                     <li>Name: '. $item->getName() . '</li>
                     <li>Description: '. $item->getDescription() . '</li>
-                    <li>Price: ₱ '. number_format ($item->getPrice(), 2) . '</li>
+                    <li>Price: ₱ '. $item->getPrice()  . '</li>
                     <li>Dose: '. $item->getDose() . '</li>
                     <li>Type: '. $item->getType() . '</li>
                     <li>Exp Date: '. $item->getExpirationDate() . '</li>

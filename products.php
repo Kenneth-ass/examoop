@@ -1,18 +1,18 @@
 <?php   
-    class Product(){
+    class Product {
         private $name;
         private $description;
         private $price;
         private $srp;
     
         
-        function setName(){
+        function setName($name){
             $this->name = $name;
         }
-        function setDescription(){
+        function setDescription($description){
             $this->description = $description;
         }
-        function setPrice(){
+        function setPrice($price){
             $this->price = $price;
         }
         
